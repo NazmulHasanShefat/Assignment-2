@@ -8,6 +8,7 @@
     --background: #1A0B2E;
     --border: #412567;
     --textColor: #ffffff;
+    --primary_gradient: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
 }
 /* common class */
 .container{
@@ -68,13 +69,14 @@ body{
     width: 100%;
     color: var(--textColor);
 }
+/*====================================== navigation section ====================================*/
 .pageHeader{
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 16px 0;
+    border-bottom: 1px solid #2A186C;
 }
 .main_navigation{
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,4 +105,43 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+/* ========================================= hero section ===================================== */
+.hero{
+    width: 100%;
+    height: 760px;
+    background-image: url("./assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.hero_wrapper{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero_logo{
+    width: 350px;
+    height: 350px;
+    background: var(--primary_gradient);
+    border-radius: 50%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 8px solid #2A186C;
+}
+.hero_logo_badge{
+    padding: 8px 16px;
+    border-radius: 1000px;
+    background-color: #00FF88;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 26px;
+    top: 18px;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
