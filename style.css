@@ -70,6 +70,10 @@
     }
 }
 
+.mobileElement {
+    display: none;
+}
+
 /* end  common class*/
 html {
     font-size: 10px;
@@ -145,8 +149,12 @@ body {
 
 .hero_logo {
     width: 350px;
+    /* height: 50vw; */
     height: 350px;
-    background: var(--primary_gradient);
+    background-image: url("./assets/microphone.png"), var(--primary_gradient);
+    background-size: 30%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
     margin-top: 100px;
     display: flex;
@@ -202,13 +210,16 @@ body {
     align-items: center;
     gap: 6px;
     transition: all .2s ease-in-out;
+
     span {
         display: flex;
         align-items: center;
     }
+
     &:hover {
         background-color: #00FF88;
         color: rgb(0, 0, 0);
+
         svg path {
             fill: rgb(0, 0, 0);
         }
@@ -217,4 +228,69 @@ body {
 
 .hero_description {
     padding: 24px 0;
+}
+
+/* for medium device of tablet device*/
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    /* tablet device */
+    .main_navigation {
+        padding: 0 30px;
+    }
+}
+
+/* ui need */
+@media screen and (max-width:780px) {
+    .nav_logo svg {
+        width: 38vw;
+    }
+
+    .nav_button {
+        display: none;
+    }
+
+    .navigation_list {
+        display: none;
+    }
+
+    .mobileElement {
+        display: block;
+    }
+
+    .mobile_menu {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+}
+
+/* mobile device */
+@media screen and (max-width:576px) {
+    .main_navigation {
+        padding: 0 30px;
+    }
+
+    .mobileElement {
+        display: block;
+    }
+
+    .hero_logo {
+        width: 50vw;
+        height: 50vw;
+        margin-top: 40px;
+    }
+
+    .hero_logo_badge {
+        width: 70px;
+        height: 35px;
+        right: -14px;
+        top: -3px;
+    }
+
+    .hero_wrapper {
+        padding: 0 20px;
+        text-align: center;
+    }
 }
