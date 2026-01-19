@@ -372,8 +372,60 @@ body {
     font-size: 1.6rem;
 }
 
+/*====================================== host card section =============================================*/
+.hostcard {
+    background: rgba(53, 17, 101, 0.4);
+    color: var(--textColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+    border-radius: 40px;
+}
 
-/* for medium device of tablet device*/
+.hostcard .hostName {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.host_details {
+    font-size: 1.6rem;
+    font-weight: 400;
+    opacity: 0.8;
+    padding: 16px 0;
+}
+
+.hostLinks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.iconContainer {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        background-color: #533C72;
+    }
+}
+/* ========================================= footer section ======================================= */
+
+
+
+
+
+
+/*============================== for medium device of tablet device ===================================*/
+
 @media screen and (min-width:576px) and (max-width:992px) {
 
     /* tablet device */
@@ -381,7 +433,7 @@ body {
         padding: 0 30px;
     }
 
-    /* ===================================== about section */
+    /* ========================================== about section ==========================================*/
     .about_wrapper {
         padding: 0 30px;
     }
@@ -413,6 +465,11 @@ body {
     .f_cards_container {
         flex-direction: column;
         align-items: center;
+    }
+
+    /*============================================== host =======================================*/
+    .meet_the_host_Section {
+        padding: 0 20px;
     }
 }
 
@@ -548,4 +605,13 @@ body {
         padding: 0 20px;
     }
 
+    /*============================================ host card section ===============================*/
+    .meet_the_host_Section {
+        padding: 0 20px;
+    }
+
+    .hostcard {
+        flex-direction: column;
+        padding: 20px;
+    }
 }
