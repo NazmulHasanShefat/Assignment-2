@@ -151,7 +151,7 @@ body {
     /* height: 50vw; */
     height: 350px;
     background-image: url("./assets/microphone.png"), var(--primary_gradient);
-    background-size: 30%, 100%;
+    background-size: 42%, 100%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
@@ -177,6 +177,7 @@ body {
 
 .hero_title {
     font-size: 6rem;
+    padding: 30px 0 0 0;
     font-weight: 800;
 }
 
@@ -226,7 +227,7 @@ body {
 }
 
 .hero_description {
-    padding: 24px 0;
+    padding: 6px 0 29px 0;
 }
 
 /* ============================================= about section ==================================== */
