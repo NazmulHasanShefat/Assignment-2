@@ -417,10 +417,44 @@ body {
         background-color: #533C72;
     }
 }
+
 /* ========================================= footer section ======================================= */
+footer {
+    min-height: 252px;
+    width: 100%;
+    background: url("./assets/footer-bg.png");
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: 100px;
+}
 
+.footer_logo {
+    padding: 35px 0;
+}
 
+.footer_links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
+.footer_link_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.6rem;
+    opacity: 0.8;
+}
+
+.copyRightText {
+    font-size: 1.6rem;
+    opacity: 0.8;
+    text-align: center;
+    padding: 32px 0;
+}
 
 
 
@@ -613,5 +647,24 @@ body {
     .hostcard {
         flex-direction: column;
         padding: 20px;
+    }
+
+    .host_details {
+        text-align: center;
+    }
+
+    .hostLinks {
+        justify-content: center;
+    }
+
+    /* =============================================== footer section ================================ */
+    footer {
+        background: url("./assets/bg_footer_mobile.png");
+        background-size: contain;
+        background-position: center;
+    }
+
+    .footer_links {
+        grid-template-columns: repeat(2, auto);
     }
 }
