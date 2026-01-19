@@ -348,6 +348,10 @@ body {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
+.video_thumbnail iframe{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
 
 .video_title {
     font-size: 2.4rem;
@@ -649,6 +653,7 @@ footer {
     .hostcard {
         flex-direction: column;
         padding: 20px;
+        border-radius: 24px;
     }
 
     .host_details {
