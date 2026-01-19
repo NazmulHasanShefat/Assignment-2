@@ -272,51 +272,61 @@ body {
 }
 
 /* ======================================= why choose section ======================================= */
-.section_heading{
+.section_heading {
     font-size: 4.8rem;
     font-weight: 700;
     text-align: center;
     padding: 50px 0 40px 0;
 }
-.why_choose_section{
+
+.why_choose_section {
     width: 100%;
     background-color: rgba(35, 14, 61, 1);
 }
-.why_chose_description_container{
+
+.why_chose_description_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
 }
-.wc_description{
+
+.wc_description {
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 40px;
     padding: 40px;
     display: flex;
     align-items: center;
 }
-.wc_description h2{
+
+.wc_description h2 {
     font-size: 2.4rem;
     font-weight: 600;
     padding: 16px 0;
 }
-.wc_description .wcd_wrapper p{
+
+.wc_description .wcd_wrapper p {
     font-size: 1.6rem;
     opacity: 0.8;
 }
-.wc_description:nth-child(1){
+
+.wc_description:nth-child(1) {
     grid-row: span 2;
 }
-.wc_description:nth-child(2),.wc_description:nth-child(3){
+
+.wc_description:nth-child(2),
+.wc_description:nth-child(3) {
     grid-column: span 2;
 }
-.wc_description:nth-child(4){
+
+.wc_description:nth-child(4) {
     grid-column: span 2;
 }
 
 
 /* for medium device of tablet device*/
 @media screen and (min-width:576px) and (max-width:992px) {
+
     /* tablet device */
     .main_navigation {
         padding: 0 30px;
@@ -324,6 +334,24 @@ body {
 
     .about_wrapper {
         padding: 0 30px;
+    }
+
+    .why_chose_description_container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
+
+    .wc_description:nth-child(1) {
+        grid-row: span 1;
+    }
+
+    .wc_description:nth-child(2),
+    .wc_description:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    .wc_description:nth-child(4) {
+        grid-column: span 1;
     }
 }
 
@@ -351,9 +379,10 @@ body {
         outline: none;
         cursor: pointer;
     }
+
     /* about section */
     .ourScores {
-         grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -390,7 +419,26 @@ body {
     }
 
     /* about section */
-    .about_wrapper{
+    .about_wrapper {
         padding: 0 20px;
+    }
+
+    /* grid section */
+    .why_chose_description_container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 30px;
+    }
+
+    .wc_description:nth-child(1) {
+        grid-row: span 1;
+    }
+
+    .wc_description:nth-child(2),
+    .wc_description:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    .wc_description:nth-child(4) {
+        grid-column: span 1;
     }
 }
