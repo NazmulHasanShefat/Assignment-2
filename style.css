@@ -151,7 +151,7 @@ body {
     /* height: 50vw; */
     height: 350px;
     background-image: url("./assets/microphone.png"), var(--primary_gradient);
-    background-size: 42%, 100%;
+    background-size: 32%, 100%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
