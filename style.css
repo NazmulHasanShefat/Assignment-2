@@ -162,7 +162,7 @@ body {
     align-items: center;
     position: relative;
     border: 8px solid #2A186C;
-   
+
 }
 
 
@@ -354,7 +354,8 @@ body {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
-.video_thumbnail iframe{
+
+.video_thumbnail iframe {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
@@ -683,6 +684,14 @@ footer {
     }
 
     .footer_links {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_link_item:nth-child(3) {
+        justify-content: end;
+    }
+    .footer_link_item:nth-child(4){
+        justify-content: start;
+        margin-left: 20px;
     }
 }
