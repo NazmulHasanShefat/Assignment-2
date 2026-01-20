@@ -139,7 +139,8 @@ body {
 }
 
 /*======================================= hero animation ======================================== */
-@media screen and (min-width: 992px) {
+/* media quary is used here because it was causing problem on smaller devices */
+@media screen and (min-width:992px) {
     .hero{
         animation: animateMic 1s linear infinite;
     }
@@ -163,6 +164,7 @@ body {
         }
     }
 }
+
 
 
 
