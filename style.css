@@ -138,6 +138,34 @@ body {
     background-position: center;
 }
 
+/*======================================= hero animation ======================================== */
+@media screen and (min-width: 992px) {
+    .hero{
+        animation: animateMic 1s linear infinite;
+    }
+    @keyframes animateMic {
+        0%{
+            background-size: 100% 100%;
+        }10%{
+            background-size: 100% 60%;
+        }20%{
+            background-size: 100% 100%;
+        }30%{
+            background-size: 100% 60%;
+        }40%{
+            background-size: 100% 100%;
+        }50%{
+            background-size: 100% 60%;
+        }75%{
+            background-size: 100% 100%;
+        }100%{
+            background-size: 100% 100%;
+        }
+    }
+}
+
+
+
 .hero_wrapper {
     width: 100%;
     height: max-content;
